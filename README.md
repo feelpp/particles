@@ -1,8 +1,8 @@
-# Feel++ Template Project
+# Particles
 
 ![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12762669.svg)
-![GitHub Release](https://img.shields.io/github/v/release/feelpp/feelpp-project)
-![CI](https://github.com/feelpp/feelpp-project/workflows/CI/badge.svg)
+![GitHub Release](https://img.shields.io/github/v/release/feelpp/particles)
+![CI](https://github.com/feelpp/particles/workflows/CI/badge.svg)
 
 A template repository to kickstart your finite-element applications with Feel++.
 
