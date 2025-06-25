@@ -34,7 +34,8 @@ dependencies = [
   "pyproject-metadata",
   "pandas<2.2",
   "tabulate",
-  "plotly"
+  "plotly",
+  "nbformat>=4.2.0"
 ]
 
 [project.urls]

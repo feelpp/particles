@@ -52,13 +52,7 @@ struct Wall {
         return normal.dot(p) - offset;
     }
 
-    Vec2 force(const Vec2& p, double radius, double k, double alpha, double dmin, double dcut) const {
-        double d = distance(p) - radius;
-        if (d >= dcut || d < 1e-6) return Vec2::Zero();
-        double exponent = std::clamp(d - dmin, 1e-3, 1.0);
-        double f = std::clamp(-k * std::pow(exponent, -alpha), -1e2, 1e2);
-        return f * normal;
-    }
+    //Vec2 force( const Vec2& p, double radius, double k, double alpha, double dmin, double dcut ) const;
 };
 
 std::vector<Particle> initialize_particles(int n, double box_size, std::mt19937& gen);

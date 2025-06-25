@@ -52,6 +52,9 @@ if ( NOT TARGET check )
   add_custom_target(check)
 endif()
 
+set(PROJECT_ENABLE_FEELPP  OFF CACHE BOOL "Enable Feel++" FORCE)
+set(PROJECT_ENABLE_FEELPP_TOOLBOXES OFF CACHE BOOL "Enable Feel++ Toolboxes" FORCE)
+
 option( FEELPP_PROJECT_ENABLE_CPP "Enable C++ application" ON )
 option( FEELPP_PROJECT_ENABLE_PYTHON "Enable Python application" ON )
 option( FEELPP_PROJECT_ENABLE_TESTS "Enable tests" ON )

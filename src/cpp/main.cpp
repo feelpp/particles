@@ -4,14 +4,14 @@
 
 int main() {
     Vector start(1);
-    start << 0.5; // initial epsilon
+    start << 1e3; // initial epsilon
 
     CSVLogger optlog("optimization.csv", "iter,epsilon,cost");
     int iteration = 0;
 
     auto cost_fn = [&](const Vector& x) {
         Vector x_clamped = x;
-        x_clamped[0] = std::clamp(x[0], 1e-4, 10.0); // epsilon bounds
+        x_clamped[0] = std::clamp(x[0], 1e-4, 1e3); // epsilon bounds
         double cost = simulate_and_score(x_clamped);
         optlog.log(iteration++, x_clamped[0], cost);
         return cost;
